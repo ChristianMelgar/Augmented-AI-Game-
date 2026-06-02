@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>The Augmented Consultant Game — Implement AI Learning Lab</title>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+
+<!-- Libraries -->
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
+<!-- Styles -->
+<link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+<div id="root"></div>
+
+<!--
+  Application scripts. Loaded in dependency order:
+    1. data.js               – DEFAULT_TEAMS + dataset constants (OPS_DATA, PL_DATA, etc.)
+    2. excelData.js          – base64 .xlsx blobs + download helpers
+    3. stepsConfig.js        – background image + STEPS array
+    4. helpers.js            – renderIcon, buildPath, cornerStyle
+    5. components.jsx        – CopyButton, DataTab, Phase1-4Data
+    6. initialMatrixData.js  – brainstorming idea pool for all 4 phases
+    7. App.jsx               – the main App component
+    8. main.jsx              – ReactDOM render
+-->
+<script type="text/babel" src="data.js"></script>
+<script type="text/babel" src="excelData.js"></script>
+<script type="text/babel" src="stepsConfig.js"></script>
+<script type="text/babel" src="helpers.js"></script>
+<script type="text/babel" src="components.jsx"></script>
+<script type="text/babel" src="initialMatrixData.js"></script>
+<script type="text/babel" src="App.jsx"></script>
+<script type="text/babel" src="main.jsx"></script>
+</body>
+</html>
